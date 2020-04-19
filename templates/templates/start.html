@@ -1,0 +1,10 @@
+{% extends "layout.html" %}
+
+{% block heading %}
+    {{ headline }}
+{% endblock %}
+
+{% block body %}
+    <p>{{ paragraph }}</p>
+    <a href="{{ url_for('next') }}">Go to next page</a>
+{% endblock %}

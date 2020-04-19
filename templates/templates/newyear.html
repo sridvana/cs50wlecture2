@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Python Flask Render Template</title>
+        <style>
+            body {
+                text-align: center;
+            }
+            .notnew {
+                color: red;
+                font-size: 32px;
+            }
+        </style>
+    </head>
+    <body>
+        <h1>{{ new_year }}</h1>
+        {% if new_year %}
+            <h2>Yes! Happy New Year</h2>
+        {% else %}
+            <p class="notnew">No! Today is not a New Year</p>
+        {% endif %}
+        <a href="{{ url_for('index') }}">Go back to home page</a>
+
+    </body>
+</html>
