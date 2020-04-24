@@ -20,7 +20,7 @@ def index():
 
 @app.route("/mynotes", methods=["GET", "POST"])
 def mynotes():
-    if session["mynotes"] == None:
+    if session["mynotes"] == '':
         session["mynotes"] = []
     headline = "This is a note taking app"
     if request.method == "POST":
